@@ -1,0 +1,12 @@
+@import "normalize/normalize.css";
+@import "style/fonts.scss";
+@import "style/constant.scss";
+@import "style/headerMobile.scss";
+@import "style/mainMobile.scss";
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+

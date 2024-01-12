@@ -1,0 +1,255 @@
+body {
+    font-family: "Lake reg"
+}
+@media (width < 768px) {
+    .main__header {
+        display: flex;
+        margin-top: 24px;
+    }
+    .main__header h1 {
+        display: flex;
+        width: 300px;
+        height: 40px;
+        margin: 0px 0px 24px 0px;
+        font-family: 'Lake bold';
+        font-size: 28px;
+        color: #1B1C21;
+        font-weight: 900;
+        align-items: center;
+    }
+    .main__leftBorder{
+        width: 4px;
+        height: 40px;
+        background-color: #41F6D7;
+        border-top-right-radius: 30%;
+        border-bottom-right-radius: 30%;
+        margin-right: 12px;
+    }
+    .heeader__button--feedback {
+        display: none;
+    }
+    .nav__content {
+        display: flex;
+        overflow: scroll;
+        padding: 0;
+        margin: 0px 0px 24px 16px;
+
+        li {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            margin-right: 9px;
+            border: 2px solid rgba(255, 255, 255, 1);
+        } 
+        button {
+            font-family: "Lake reg";
+            font-size: 16px;
+            border: none;
+            background-color: white;
+            color: #7E7E82;
+            width: 250px;
+        }
+    }
+
+    .nav__content li button:hover, .nav__content li button:focus{
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+    }  
+    .main__article {
+        min-width: 320px;
+        
+    }
+    .main__textContent {
+        width: 280px;
+        height: 110px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 16px;
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    .main__button--arrow {
+        display: flex;
+        align-items: center;
+        width: 132px;
+        height: 24px;
+        border: none;
+        background-color: white;
+        font-family: "Lake reg";
+        font-weight: 900;
+        margin: 16px 0px 16px 16px;
+        background-color: rgba(248, 248, 248, 1);
+    }
+    .main__button--arrow::before {
+        content: url("Image/arrowMore.svg");
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    .main__imageWrapper {
+        min-width: 319px;
+        margin: 0 auto;
+    }
+    .main__image {
+        min-width: 319px;
+        height: 176px;
+        border-bottom: 1px solid rgba(217, 255, 245, 1);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main {
+        .main__title{
+            display: flex;
+            align-items: center;
+            min-width: 320px;
+            height: 80px;
+            background-color: white;
+            margin-top: 24px;
+            margin-bottom: 16px;
+
+            .title__content {
+                color: $grayText;
+                font-family: "Lake reg";
+                font-weight: 500;
+                font-style: 16px;
+                line-height: 24px;
+                min-width: 295px;
+                height: 50px;
+                margin: 16px auto 16px 16px;
+            }
+        }
+        
+    }
+    .mainSwiper__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+        background-color: white;
+        width: 240px;
+        height: 75px;
+        border: 1px solid rgba(234, 234, 234, 1);
+        border-radius: 6px;
+        margin-left: 16px;
+        
+
+        img {
+            object-fit: contain;
+            margin-left: 16px;
+        }
+        .mainSwiper__button {
+            margin-right: 16px;
+            background: url("image/arrow.svg") center no-repeat;
+            border: 2px solid $btnColor;
+        }
+    }
+    .mainSwiper__content--second {
+        max-width: 240px;
+        height: 160px;
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid rgba(234, 234, 234, 1);
+        margin-left: 16px;
+        margin-bottom: 30px;
+        position: relative;
+
+        p{
+            color: rgba(27, 28, 33, 1);
+            font-family: "Lake reg";
+            margin: 16px auto auto 16px;
+            
+        }
+        .mainSwiper__button--second {
+            margin-right: 16px;
+            background: url("image/arrow.svg") center no-repeat;
+            border: 2px solid $btnColor;
+            position: absolute;
+            bottom: 16px;
+            right: 5px;
+
+        }
+    }
+    .mainSwiper__content--third {
+        width: 260px;
+        height: 180px;
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid rgba(234, 234, 234, 1);
+        position: relative;
+        margin-bottom: 30px;
+        margin-left: 16px;
+        p {
+            font-size: 14px;
+            font-family: "Lake reg";
+            margin: 0;
+        }
+        p:nth-child(2n) {
+            color:rgba(27, 28, 33, 1);
+            line-height: 18px;
+            margin-left: 16px;
+    
+        }
+        p:nth-child(5), p:nth-child(3), p:nth-child(1) {
+            color: $grayText;
+            margin-top: 16px;
+            margin-left: 16px;
+        }
+    }
+    
+    .mainSwiper__button--third {
+        width: 119px;
+        height: 32px;
+        border: none;
+        background: $btnColor;
+        border-radius: 16px;
+        font-family: "Lake reg";
+        font-size: 12px;
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    .mainSwiper__button--third::after {
+        content: ">";
+        color: white;
+        margin-left: 16px;
+        font-size: 16px;
+    }
+    .main__commersItem{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 35px;
+
+        p {
+            width: 190px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            margin-left: 16px;
+            border: none;
+            background-color: rgba(248, 248, 248, 1);
+            text-align-last: left;
+            
+        }
+        p::after {
+            content: ">";
+            color: $btnColor;
+            margin-left: 16px;
+            font-size: 16px; 
+            
+        }
+    }
+    .footer__wrapper {
+        text-align: center;
+        p {
+            margin-top: 0;
+            color: $grayText;
+        }
+        p:first-child {
+            margin-bottom: 0;
+        }
+    }
+    
+}   

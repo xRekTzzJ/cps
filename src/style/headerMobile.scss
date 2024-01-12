@@ -1,0 +1,67 @@
+.button {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.border {
+    width: 2px;
+    height: 32px; 
+    background-color: rgba(234, 234, 234, 1);
+}
+body {
+    background-color:rgba(248, 248, 248, 1);
+}
+
+@media (width < 768px) {
+    .mobailheader {
+        min-width: 320px;
+        height: 88px;
+        background-color:white;
+    }
+    .mobailheader__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobailheader__item {
+        display: none;
+    }
+    .mobailheader__border--second {
+        display: none;
+    }
+    .mobailheader__button_phone{
+        display: none;
+    }
+    .mobailheader__button_message {
+        display: none;
+    }
+    .mobailheader__button_profile{
+        display: none;
+    }
+    .mobailheader__border--third {
+        display: none;
+    }
+    .mobailheader__logo {
+        width: 96.55px;
+        height: 50.81px; 
+    }
+    .mobailheaderr__button_menu {
+        background: url("./Image/menu.svg") $btnColor center no-repeat;
+        margin: 24px 16px; 
+    }
+    .mobailheader__button_setting {
+        background: url("./Image/setting.svg") $btnColor center no-repeat;
+        
+    }
+    .mobailheader__button_search {
+        background: url("./Image/search.svg") $btnColor center no-repeat;
+        margin: 24px 5%; 
+    }
+    .mobailheader__border--first {
+        margin: 0px 10px;
+    }
+}
