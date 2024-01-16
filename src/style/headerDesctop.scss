@@ -1,0 +1,71 @@
+@media (width >= 1440px) {
+    body{
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+    }
+    .mobailheader, .main__header, .button--type--close {
+        display: none;
+    }
+    .desctopHeader {
+        
+        max-width: 1120px;
+        
+        .desctopHeader__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .desctopHeader__item--left {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 3%;
+            align-items: center;
+        }
+        .desctopHeader__item--right {
+            display: flex;
+            margin-top: 3%;
+            align-items: center;
+            margin-right: 16px;
+        }
+        
+        .desctopHeader__item--left h1 {
+            font-family: 'Lake bold';
+            font-size: 28px;
+            color: #1B1C21;
+            font-weight: 900;
+            vertical-align: bottom;
+            margin: 0;
+        }
+        .leftBorder {
+            width: 4px;
+            height: 40px;
+            background-color: #41F6D7;
+            border-top-right-radius: 30%;
+            border-bottom-right-radius: 30%;
+            margin-right: 30px;
+        }
+        
+        .desctopHeader__button {
+            display: flex;
+            align-items: center;
+
+            button {
+                margin-left: 16px;
+            }
+            span {
+                margin-left: 16px;
+                font-weight: bolder;
+            }
+        }
+        .desctopHeader__button--setting {
+            background: url("./image/setting.svg") $btnColor center no-repeat;
+        }
+        .desctopHeader__button--search {
+            background: url("./image/search.svg") $btnColor center no-repeat;
+        }
+    }
+    
+
+}

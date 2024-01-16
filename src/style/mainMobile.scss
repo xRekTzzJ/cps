@@ -25,7 +25,7 @@ body {
         border-bottom-right-radius: 30%;
         margin-right: 12px;
     }
-    .heeader__button--feedback {
+    .heeader__button--feedback, .main__article--price, .main__readMore--third, .main__readMore--second, .sidePanel {
         display: none;
     }
     .nav__content {
@@ -40,14 +40,13 @@ body {
             justify-content: center;
             align-items: center;
             margin-right: 9px;
-            border: 2px solid rgba(255, 255, 255, 1);
         } 
         button {
             font-family: "Lake reg";
             font-size: 16px;
             border: none;
-            background-color: white;
-            color: #7E7E82;
+            background-color: $body;
+            color: $grayText;
             width: 250px;
         }
     }
@@ -58,7 +57,6 @@ body {
     }  
     .main__article {
         min-width: 320px;
-        
     }
     .main__textContent {
         width: 280px;
@@ -83,8 +81,9 @@ body {
         margin: 16px 0px 16px 16px;
         background-color: rgba(248, 248, 248, 1);
     }
+  
     .main__button--arrow::before {
-        content: url("Image/arrowMore.svg");
+        content: url("image/arrowMore.svg");
         margin-right: 5px;
         vertical-align: middle;
     }
@@ -118,6 +117,8 @@ body {
                 min-width: 295px;
                 height: 50px;
                 margin: 16px auto 16px 16px;
+                display: flex;
+                align-items: center;
             }
         }
         
@@ -134,7 +135,8 @@ body {
         border-radius: 6px;
         margin-left: 16px;
         
-
+        
+        
         img {
             object-fit: contain;
             margin-left: 16px;
@@ -222,7 +224,7 @@ body {
         justify-content: flex-start;
         margin-bottom: 35px;
 
-        p {
+        a {
             width: 190px;
             font-size: 16px;
             line-height: 24px;
@@ -233,7 +235,7 @@ body {
             text-align-last: left;
             
         }
-        p::after {
+        a::after {
             content: ">";
             color: $btnColor;
             margin-left: 16px;
@@ -243,9 +245,11 @@ body {
     }
     .footer__wrapper {
         text-align: center;
+
         p {
-            margin-top: 0;
+            margin: 0px 4px 16px 4px;
             color: $grayText;
+
         }
         p:first-child {
             margin-bottom: 0;

@@ -1,0 +1,265 @@
+@media (width >= 768px) and (width <= 1440px) {
+   
+    .main {
+        min-width: 768px;
+
+        .main__header {
+            display: flex;
+            margin-top: 24px;
+        }
+        .main__header h1 {
+            display: flex;
+            width: 300px;
+            height: 40px;
+            margin: 0px 0px 24px 0px;
+            font-family: 'Lake bold';
+            font-size: 28px;
+            color: #1B1C21;
+            font-weight: 900;
+            align-items: center;
+            
+        }
+        .main__leftBorder{
+            width: 4px;
+            height: 40px;
+            background-color: #41F6D7;
+            border-top-right-radius: 30%;
+            border-bottom-right-radius: 30%;
+            margin-right: 12px;
+        }
+    } 
+    
+    .heeader__button--feedback, .sidePanel, .header__desctop {
+        display: none;
+    }
+    .nav {
+        min-width: 768px;
+
+        .nav__content {
+            display: flex;
+            overflow: scroll;
+            padding: 0;
+            list-style: none;
+        }
+        .nav__content li button {
+            min-width: 250px;
+            min-height: 40px;
+            border: none;
+            background-color: $body;
+            color: $grayText;
+
+        }
+        .nav__content li button:hover, .nav__content li button:focus{
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+            
+        }
+        
+    }
+    .main__article {
+        display: flex;
+        position: relative;
+        min-width: 720px;
+        max-width: 1200px;
+
+        .main__textContent {
+            max-width: 500px;
+            margin: 0px 48px 0px 24px;
+            height: 175px;
+            overflow: hidden;
+            font-size: 14px;
+            line-height: 20px;
+
+            p:first-child {
+                margin-top: 0;
+            }
+        }
+        .main__imageWrapper {
+            margin-right: 24px;
+            .main__image {
+                width: 360px;
+                height: 210px;
+            }
+        }
+        .main__readMore--first {
+            position: absolute;
+            bottom: -5%;
+        }
+    }
+    .main__button--arrow {
+        display: flex;
+        align-items: center;
+        width: 132px;
+        height: 24px;
+        border: none;
+        background-color: white;
+        font-family: "Lake reg";
+        font-weight: 900;
+        margin: 16px 0px 16px 16px;
+        background-color: rgba(248, 248, 248, 1);
+    }
+    .main__button--arrow::before {
+        content: url("image/arrowMore.svg");
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    .title__content {
+        color: $grayText;
+        font-weight: normal;
+        border-top: 1px solid rgba(217, 255, 245, 1);
+        margin: 40px 0px 40px 24px;
+    }
+    .mainSwiper {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 750px;
+        height: 170px;
+        overflow: hidden;
+        position: relative;
+
+        .main__button--arrow {
+            position: absolute;
+            bottom: -10%;
+        }
+    }
+    
+    .mainSwiper__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        width: 224px;
+        height: 75px;
+        border: 1px solid rgba(234, 234, 234, 1);
+        border-radius: 6px;
+        margin: 0px 0px 16px 16px;
+        
+        .img {
+            margin-left: 16px;
+        }
+        .mainSwiper__button {
+            margin-right: 16px;
+            background: url("image/arrow.svg") center no-repeat;
+            border: 2px solid $btnColor;
+        }
+    }
+    .mainSwiper--second {  
+        height: 180px;
+        overflow: hidden;
+        
+        .mainSwiper__content--second {
+           min-width: 224px;
+           height: 160px;
+           background-color: white;
+           border-radius: 6px;
+           border: 1px solid rgba(234, 234, 234, 1);
+           margin-left: 16px;
+           margin-bottom: 20px;
+           position: relative;
+
+            p {
+               color: rgba(27, 28, 33, 1);
+               font-family: "Lake reg";
+               margin: 16px auto auto 16px;
+               
+            }
+            .mainSwiper__button--second {
+               margin-right: 16px;
+               background: url("image/arrow.svg") center no-repeat;
+               border: 2px solid $btnColor;
+               position: absolute;
+               bottom: 16px;
+               right: 5px;
+
+            }
+        }
+    }
+    .mainSwiper--third {
+        display: none;
+    }
+    .price__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .price__content {
+            min-width: 720px;
+            max-width: 1200px;
+            display: grid;
+            gap: 16p;
+            grid-template-columns: 35% 20% 20% 20%;
+            margin: 0px 16px 0px 16px;
+            border-top: 1px solid rgba(234, 234, 234, 1);
+            border-bottom: 1px solid rgba(234, 234, 234, 1);
+            background-color: white;
+            
+        }
+        .price__content:nth-child(1) {
+            color: $grayText;
+            border: none;
+        }
+        .price__content:nth-child(2){
+            border-top: none;
+        }
+        .button__price {
+            width: 119px;
+            height: 32px;
+            border: none;
+            background: $btnColor;
+            border-radius: 16px;
+            font-size: 12px;
+            color: white;
+            bottom: 10px;
+            right: 10px;
+            margin: auto 0px auto 0px;
+        }
+        .button__price::after {
+            content: ">";
+            color: white;
+            margin-left: 16px;
+            font-size: 16px;
+        }
+    }
+    .main__article:last-child {
+        flex-direction: column;
+    }
+    .main__textContent--last {
+        width: 421px;
+        height: 60px;
+        margin: 0px 0px 30px 16px;
+    }
+   
+    .main__commersItem{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 35px;
+        margin-top: 16px;
+
+        a {
+            width: 350px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            margin-left: 16px;
+            border: none;
+            background-color: rgba(248, 248, 248, 1);
+            text-align-last: left;
+            
+        }
+        a::after {
+            content: ">";
+            color: $btnColor;
+            margin-left: 16px;
+            font-size: 16px; 
+            
+        }
+        
+    }
+    .footer__wrapper {
+        margin: 0px 16px 0px 16px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        color: $grayText;
+
+    }
+}

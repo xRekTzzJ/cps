@@ -1,2 +1,7 @@
 import { register } from 'swiper/element/bundle';
-register();
+function initSwiper() {
+    if (window.innerWidth < 768) {
+        register()
+    }
+}
+initSwiper()

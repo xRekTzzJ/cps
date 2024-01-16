@@ -1,0 +1,42 @@
+@media (width > 767px) and (width <= 1440px) {
+    .mobailheader {
+        min-width: 768px;
+        height: 88px;
+        background-color:white;
+    }
+    .mobailheader__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 16px 0px 16px;
+    }
+    .mobailheaderr__button_menu {
+        background: url("./image/menu.svg") $btnColor center no-repeat;
+        margin: 24px 16px; 
+    }
+    .mobailheader__border--first, .mobailheader__item, .desctopHeader {
+        display: none;
+    }
+    .mobailheader__button_phone {
+        background: url("./image/phone.svg") $btnColor center no-repeat;
+    }
+    .mobailheader__button_message {
+        background: url("./image/message.svg") $btnColor center no-repeat;
+    }
+    .mobailheader__button_profile {
+        background: url("./image/profile.svg") $btnColor center no-repeat;
+    }
+    .mobailheader__button_setting {
+        background: url("./image/setting.svg") $btnColor center no-repeat;
+    }
+    .mobailheader__button_search {
+        background: url("./image/search.svg") $btnColor center no-repeat;
+    }
+    .mobailheader__logo {
+        margin-right: 30%; 
+    }
+    .main__image {
+        width: 360px;
+        height: 208px;
+    }
+}
