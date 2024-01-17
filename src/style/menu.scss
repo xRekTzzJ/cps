@@ -1,4 +1,4 @@
-@media (width > 1440px) {
+
     .sidePanel {
         position: relative;
         max-width: 320px;
@@ -6,7 +6,7 @@
         left: 0px;
         top: 0px;
         background-color: white;
-        
+        z-index: 1;
     }
     .button {
         width: 40px;
@@ -104,7 +104,7 @@
         margin-bottom: 12px;
     }
     .footer__number{
-        display: inline-block;
+        display: block;
         font-family: "TT Lakes bold";
         font-size: 24px;
         font-weight: 900;
@@ -127,7 +127,6 @@
     .footer__lang a:first-child label {
         color: rgba(126, 126, 130, 1); 
     }
-    section:first-child {
-        background-color: white;
-    }
-}
+   
+
+

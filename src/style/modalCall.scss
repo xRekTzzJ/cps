@@ -1,8 +1,13 @@
-@media (width > 320px) and (width < 1440px) {
+@media (width < 1440px) {
     .modal__call {
+        position: fixed;
+        top: 10%;
+        
+        z-index: 2;
         display: none;
         width: 320px;
         height: 680px;
+        background-color: white;
     
         .modal__wrapper {
             margin-left: 5%;
@@ -91,10 +96,14 @@
 } 
 
 @media (width > 1440px) {
+    
     .modal__call {
         display: none;
+        position: fixed;
+        right: -40%;
         width: 440px;
-        height: 940px;
+        height: 100vh;
+        background-color: white;
 
         .modal__wrapper {
             margin-left: 5%;
@@ -178,5 +187,20 @@
             margin-left: 5px;
         }
     }
+    .modal {
+        z-index: 2;
+    }
+    
+}
+
+.cover {
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    background-color:rgba(94, 94, 94, 0.9);
+    z-index: 2;
+    transition: 1s;
 }
 

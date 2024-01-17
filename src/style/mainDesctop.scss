@@ -44,6 +44,7 @@
             margin-right: 40px;
             margin-left: 40px;
             overflow: hidden;
+            transition: 1s;
         }
         .main__button--arrow {
             position: absolute;
@@ -66,6 +67,7 @@
             vertical-align: middle;
         }
         
+        
     }
     .title__content {
         color: $grayText;
@@ -80,11 +82,32 @@
         overflow: hidden;
         position: relative;
         max-width: 1120px;
+        transition: 1s;
 
         .main__button--arrow {
             position: absolute;
             bottom: -10%;
         }
+    }
+    .main__button--arrowUP {
+        position: absolute;
+        left: 2%;
+        bottom: 20%;
+        display: flex;
+        align-items: center;
+        width: 132px;
+        height: 24px;
+        border: none;
+        background-color: white;
+        font-family: "Lake reg";
+        font-weight: 900;
+        margin: 16px 0px 16px 16px;
+        background-color: rgba(248, 248, 248, 1);
+    }
+    .main__button--arrowUP::before {
+        content: url("image/arrowUP.svg");
+        margin-right: 5px;
+        vertical-align: middle;
     }
     .mainSwiper__content {
         display: flex;

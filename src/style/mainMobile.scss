@@ -64,9 +64,23 @@ body {
         margin: 0 auto;
         overflow: hidden;
         margin-bottom: 16px;
+        transition: 1s;
         p {
             margin-top: 0;
             margin-bottom: 0;
+        }
+    }
+    .main__textContent--last {
+        width: 280px;
+        height: 110px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 16px;
+        transition: 1s;
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+           
         }
     }
     .main__button--arrow {
@@ -84,6 +98,27 @@ body {
   
     .main__button--arrow::before {
         content: url("image/arrowMore.svg");
+        margin-right: 5px;
+        vertical-align: middle;
+        
+    }
+    .main__button--arrowUP {
+        position: absolute;
+        left: 2%;
+        bottom: 20%;
+        display: flex;
+        align-items: center;
+        width: 132px;
+        height: 24px;
+        border: none;
+        background-color: white;
+        font-family: "Lake reg";
+        font-weight: 900;
+        margin: 16px 0px 16px 16px;
+        background-color: rgba(248, 248, 248, 1);
+    }
+    .main__button--arrowUP::before {
+        content: url("image/arrowUP.svg");
         margin-right: 5px;
         vertical-align: middle;
     }
@@ -121,7 +156,6 @@ body {
                 align-items: center;
             }
         }
-        
     }
     .mainSwiper__content {
         display: flex;
@@ -134,8 +168,6 @@ body {
         border: 1px solid rgba(234, 234, 234, 1);
         border-radius: 6px;
         margin-left: 16px;
-        
-        
         
         img {
             object-fit: contain;
