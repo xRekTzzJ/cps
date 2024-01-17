@@ -1,0 +1,175 @@
+@media (width < 1440px) {
+    .modal__feedback {
+        z-index: 2;
+        display: none;
+        width: 320px;
+        height: 680px;
+        background-color: rgba(255, 255, 255, 1);
+        position: fixed;
+        top: 10%;
+        
+        z-index: 2;
+        
+    
+        .modal__wrapper {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .modal__header {
+            width: 288px;
+            padding-top: 100px;
+            position: relative;
+            margin-top: 16px;
+    
+            h1 {
+                font-family: "Lake bold";
+                font-size: 24px;
+                font-weight: 900;
+                display: flex;
+                align-items: center;
+       
+            }
+            h1::before {
+                display: inline-block;
+                position: relative;
+                left: -5.5%;
+                bottom: 5px;
+                width: 4px;
+                height: 40px;
+                content: " ";
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                background-color: aqua;
+                margin-right: 5px;
+                
+            }
+            .button__modal--close {
+                position: absolute;
+                background: url("./image/close.svg") $btnColor center no-repeat;
+                top: 15%;
+                left: 0%;
+            }
+            
+        }
+        .modal__wrapper input {
+            width: 288px;
+            height: 48px;
+            border-radius: 10px;
+            border: 1px solid rgba(234, 234, 234, 1);
+            margin-bottom: 16px;
+        }
+        .warningText {
+            font-size: 14px;
+    
+            a {
+                color: $btnColor;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            
+        }
+        .send {
+            border: none;
+            border-radius: 25px;
+            width: 136px;
+            height: 32px;
+            background-color: $btnColor;
+            color: white;
+            margin-left: 40%;
+    
+    
+        }
+        .send::after {
+            content: ">";
+            color: white;
+            margin-left: 5px;
+        }
+    
+    }
+}
+@media (width > 1440px) {
+    .modal__feedback {
+        display: none;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: 2;
+        width: 440px;
+        height: 100vh;
+        position: fixed;
+        top: 0%;
+        right: -40%;
+        z-index: 2;
+
+        .modal__wrapper {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .modal__header {
+            width: 288px;
+            position: relative;
+            margin-top: 16px;
+        }
+        h1 {
+            font-family: "Lake bold";
+            font-size: 24px;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+   
+        }
+        h1::before {
+            display: inline-block;
+            position: relative;
+            left: -7.5%;
+            bottom: 5px;
+            width: 4px;
+            height: 40px;
+            content: " ";
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: aqua;
+            margin-right: 5px;
+            
+        }
+        .button__modal--close {
+            position: absolute;
+            background: url("./image/close.svg") $btnColor center no-repeat;
+            left: -30%;
+            top: -10%;
+        }
+        .modal__wrapper input {
+            width: 376px;
+            height: 48px;
+            border-radius: 10px;
+            border: 1px solid rgba(234, 234, 234, 1);
+            margin-bottom: 16px;
+        }
+        .warningText {
+            font-size: 14px;
+    
+            a {
+                color: $btnColor;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            
+        }
+        .send {
+            border: none;
+            border-radius: 25px;
+            width: 136px;
+            height: 32px;
+            background-color: $btnColor;
+            color: white;
+            margin-left: 60%;
+    
+    
+        }
+        .send::after {
+            content: ">";
+            color: white;
+            margin-left: 5px;
+        }
+    
+    }
+    
+}
