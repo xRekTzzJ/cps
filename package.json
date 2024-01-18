@@ -7,7 +7,8 @@
     "start": "webpack serve",
     "build-dev": "set NODE_ENV=development&&webpack",
     "build-prod": "set NODE_ENV=production&&webpack",
-    "clear": "rd /s /q dist"
+    "clear": "rd /s /q dist",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "JS",
@@ -42,6 +43,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "gh-pages": "^6.1.1",
     "swiper": "^11.0.5"
   }
 }
