@@ -27,7 +27,7 @@ module.exports = {
             template: path.resolve(__dirname, "src", "index.html")
         }),
         new MiniCssExtractPlugin({
-            filename: "[name].[contenthash].scss"
+            filename: "[name].[contenthash].css"
         })
 
     ],
@@ -38,21 +38,14 @@ module.exports = {
                 loader: "html-loader",
             },
             {
-                test: /\.(c|sa|sc)ss$/i,
+                test: /\.scss$/,
                 use: [
-                    devMode ? "style-loader" : MiniCssExtractPlugin.loader,
-                    "css-loader",
-                    {
-                        loader: "postcss-loader",
-                        options: {
-                            postcssOptions: {
-                                plugins: [require("postcss-preset-env")]
-                            }
-                        }
-                    },
-                    "sass-loader"
+                  MiniCssExtractPlugin.loader, // Extract css to separate file
+                  'css-loader', // translates CSS into CommonJS
+                  'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
+                  'sass-loader', // compiles Sass to CSS, using Node Sass by default
                 ],
-            },
+              },
             {
                 test: /\.(woff2?|eot|ttf)$/i,
                 type: "asset/resource",
